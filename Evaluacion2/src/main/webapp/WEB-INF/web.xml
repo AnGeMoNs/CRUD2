@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>RegistrarGames_Controller</servlet-name>
+        <servlet-class>Controllers.RegistrarGames_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarGames_Controller</servlet-name>
+        <servlet-class>Controllers.EliminarGames_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarGames_Controller</servlet-name>
+        <servlet-class>Controllers.EditarGames_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BuscarGames_Controller</servlet-name>
+        <servlet-class>Controllers.BuscarGames_Controller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrarGames_Controller</servlet-name>
+        <url-pattern>/RegistrarGames_Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarGames_Controller</servlet-name>
+        <url-pattern>/EliminarGames_Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarGames_Controller</servlet-name>
+        <url-pattern>/EditarGames_Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuscarGames_Controller</servlet-name>
+        <url-pattern>/BuscarGames_Controller</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
